@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <title>Learning jQuery UI</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"/>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <style>
+    #draggable {
+      width:100px;
+      height:100px;
+      background-color:green;
+      padding: 50px;
+      margin: 0 auto;
+    }
+    #resizable {
+      float: left;
+      width:100px;
+      height:100px;
+      background-color:pink;
+    }
+
+    #target {
+      height:300px;
+      width:300px;
+      background-color:yellow;
+    }
+  </style>
+
+</head>
+<body>
+  <h3>Title</h3>
+  <div id="accordion">
+    <p> A description of section 1. </p>
+    <p> This is some text.   This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text. </p>
+    <p> Description of section 2. </p>
+    <p> This is some text.   This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text. </p>
+    <p> Description of section 3.</p>
+    <p> This is some text.   This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text.
+        This is some text.  This is some text.  This is some text. </p>
+  </div>
+  <ul>
+      <li>Pizza</li>
+      <li>Cheese</li>
+      <li>Chocolate</li>
+      <li>Soda</li>
+      <li>Water</li>
+  </ul>
+
+  <div id="draggable">Drag me around!</div>
+  <div id="resizable">Resize me!</div>
+  <div id="target"></div>
+  <script>
+    $("#draggable").draggable();
+    $("#resizable").resizable();
+    $("#target").droppable({
+      drop:function(ui, event) {
+        $("#target").css("background-color", "red");
+      }
+    });
+
+    $("#accordion").accordion();
+    $("ul").sortable();
+  </script>
+
+
+</body>
+</html>

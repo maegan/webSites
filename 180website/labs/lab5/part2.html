@@ -1,0 +1,26 @@
+<html>
+<head>
+
+<script>
+function check() {
+	var usernameField = document.getElementById("username");
+	var username = usernameField.value;
+	
+	if (username == "") {
+		usernameField.value = "Put username here";
+		usernameField.setAttribute("style", "border: 2px solid red");
+	}
+}
+</script>
+
+</head>
+<body>
+
+<form id="myform">
+<label id="usernameLabel">Username:</label> <input type="text" id="username">
+</form>
+
+<button type="button" onclick="check()">Check</button>
+
+</body>
+</html>

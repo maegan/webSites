@@ -1,0 +1,83 @@
+<!doctype html> 
+<!-- positioning.html -->
+<html>
+<head>
+    <title>Positioning</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+
+        .large {
+    		font-size:200%;
+		}
+		
+        #green {
+            color:green;
+		}
+		
+        .underline {
+            text-decoration:underline;
+		}
+￼￼￼
+￼￼￼￼ 		.bold {
+        		font-weight:bold;
+		}
+		
+    	.purplebox {
+        		background-color:#B404AE;
+        		width:200px;
+        		height:200px;
+        		z-index:10;
+      		position: absolute;
+        		top:100px;
+        		left: 100px;
+		}
+		
+    	.greenbox {
+        		background-color:#295715;
+       	 	width:300px;
+        		height:500px;
+        		position: relative;  /* need position property to get z-index to work */ 
+        		z-index:1;
+		}
+		
+    	.gaudy {
+    		background-color: pink;
+    		color: green;
+    		border: 2px dashed purple;
+    		text-align: center;
+    		margin: 10px 50px;
+    		position: absolute;
+    		top: 10px;
+    		left: 10px;
+			z-index: 5;
+    	}
+
+	</style>
+</head>
+
+<body>
+	<div class="purplebox">
+￼		<p class="large">This is some text.</p>
+
+	</div>
+
+    <p class="gaudy"> Isn't this pretty? </p>
+    <div class="greenbox">
+    	<p id="green" class="large">This is some more text.</p>
+
+	</div>
+
+    <div class="greenbox">
+        <p id="green" class="large">This is some more text.</p>
+	</div>
+
+    <div class="greenbox">
+        <p id="green" class="large">This is some more text.</p>
+	</div>
+
+    <p>The third <span class="underline large bold">word</span> in this
+paragraph is underlined.</p>
+
+</body>
+</html>
+￼￼￼

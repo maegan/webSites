@@ -1,0 +1,42 @@
+<html>
+<head>
+
+<script>
+function check() {
+	var username = document.getElementById("username").value;
+	
+	if (username == "") {
+	
+		var message = document.createTextNode("You must enter a username");
+	
+		var p = document.createElement("p");
+	
+		var strong = document.createElement("strong");
+	
+		// Makes message the child of strong, i.e., 
+		// Puts the message text inside of a strong element
+		strong.appendChild(message);
+		
+		strong.setAttribute("style", "color: red;")
+	
+		p.appendChild(strong);
+		
+		var body = document.getElementsByTagName("body")[0];  
+	
+		body.appendChild(p);
+	}
+
+}
+</script>
+
+</head>
+<body>
+
+<form id="myform">
+Username: <input type="text" id="username">
+</form>
+
+<button type="button" onclick="check()">Check</button>
+
+</body>
+</html>

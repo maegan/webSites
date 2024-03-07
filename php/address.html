@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+
+<form method="post" action='get_data.php'>
+  <p>Enter Location:</p>
+
+<!--  <textarea name='address' placeholder='City, Country'></textarea>
+-->
+  City:  <input type="text" name="city">
+  Country:  <input type="text" name="country">
+
+  <p>Who went?</p>
+  <input type="checkbox" name="names[]" value="All">All</input>
+  <input type="checkbox" name="names[]" value="Tim">Tim</input>
+  <input type="checkbox" name="names[]" value="MA">MA</input>
+  <input type="checkbox" name="names[]" value="TJ">TJ</input>
+  <input type="checkbox" name="names[]" value="Ryan">Ryan</input>
+  <input type="checkbox" name="names[]" value="Kat">Kat</input>
+  <input type="checkbox" name="names[]" value="Kassie">Kassie</input>
+
+  <p>What year?</p>
+  <input type="text" name="year">
+
+  <br/>
+  <input type="submit" name="submit_address" value="Generate Data">
+</form>
+
+
+</body>
+</html>

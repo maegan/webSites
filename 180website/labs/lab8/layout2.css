@@ -1,0 +1,27 @@
+#main {  
+  background-color: lightblue;
+  float: left;  
+  width: 250px;
+} 
+#extras {  
+  background-color: pink;
+  float: left;  
+  width: 150px; 
+}  
+#footer, #header {  
+  background-color: lightgray;
+  clear: left; 
+  
+} 
+#wrapper {
+  width: 600px;
+  margin: 0 auto;
+
+}
+div {
+  	border: 50px solid transparent;
+	border-image: url(border.png) 50 50 round;
+}
+#wrapper {
+	border: none;
+}

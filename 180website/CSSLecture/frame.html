@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Decorative Image Frames</title>
+	<style>
+		.img_frame {
+			float: left;	
+			margin: 20px;
+		} 
+		.img_frame img {
+			border-width: 40px;
+			border-image: url(frame1.jpg) 70 70 stretch;
+		}
+		.img_caption {
+			text-align: center
+		}
+
+		.photo_frame {
+			float: right;
+			margin: 20px;
+		}
+		.photo_frame img {
+			padding: 20px 20px 40px;
+			background-color: #EEEEEE;
+			box-shadow: 5px 5px 5px #000;
+		}
+		.photo_frame .img_caption {
+			margin-top: -35px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="img_frame">
+		<img src="monalisa.jpg" alt="Sample Image" width="80"><br>
+		<div class="img_caption">The Mona Lisa</div>
+	</div>
+
+	<div class="img_frame">
+		<img src="monalisa.jpg" alt="Sample Image" width="160"><br>
+		<div class="img_caption">The Mona Lisa</div>
+	</div>
+
+	<div class="img_frame">
+		<img src="monalisa.jpg" alt="Sample Image" width="320"><br>
+		<div class="img_caption">The Mona Lisa</div>
+	</div>
+
+	<div class="photo_frame">
+		<img src="monalisa.jpg" alt="Sample Image" width="80"><br>
+		<div class="img_caption">The Mona Lisa</div>
+	</div>
+
+	<div class="photo_frame">
+		<img src="monalisa.jpg" alt="Sample Image" width="160"><br>
+		<div class="img_caption">The Mona Lisa</div>
+	</div>
+
+	<div class="photo_frame">
+		<img src="monalisa.jpg" alt="Sample Image" width="320"><br>
+		<div class="img_caption">The Mona Lisa</div>
+	</div>
+</body>
+
+</html>
